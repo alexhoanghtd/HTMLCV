@@ -104,8 +104,10 @@ h1.section-header{
 	text-transform: uppercase;
 	line-height: 40px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #ccc;
 	margin-bottom: 20px;
+	background-image: url('../images/header-bg.png');
+	background-repeat: repeat-x;
+	background-position: 0px 40px;
 }
 
 /*Basic info styling*/
