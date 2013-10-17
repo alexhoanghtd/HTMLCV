@@ -1,14 +1,290 @@
+/*
+	styling header area
+*/
 header{
-	background-color: #aaa;
+	background-color: #222;
 	width: 100%;
-
+	height: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+div.header-inner-wrapper{
+	width: 960px;
+	margin:auto;
+}
+/*css the logo*/
 header a#logo-link{
-	display: inline-block;
-	height: 100px;
-	width: 100px;
+	float: left;
+	height: 70px;
+	width: 70px;
 	background-image: url('../images/alex.jpg');
 	border-radius: 50px;
-	background-size: 150%;
+	background-size: 210%;
+	background-position: -20px -20px;
+	border: 5px solid #fff;
+	transition: border 0.3s, background 0.3s;
+}
+header a#logo-link:hover{
+	border: 5px solid #1aa4fc;
+	background: #fff;
+}
+header a#logo-link:after{
+	/*the "A" in the middle*/
+	content: "a";
+	display: block;
+	height: 70px;
+	width: 70px;
+	font-size: 60px;
+	color: #1aa4fc;
+	line-height: 60px;
+	text-align: center;
+}
+header nav{
+	float: right;
+	margin-left: 20px;
+}
+ul#cv-section-links li{
+	float: left;
+}
+ul#cv-section-links li a:after{
+	content: " ";
+	display: block;
+	float: right;
+	margin-top: 38px;
+	height: 5px;
+	width: 5px;
+	border-radius: 5px;
+	background-color: #1aa4fc;
+}
+ul#cv-section-links li:last-child a{
+	padding-right: 0;
+}
+ul#cv-section-links li:last-child a:after{
+	content: "";
+	display: block;
+	float: right;
+	margin-top: 45px;
+	height: 0;
+	width: 0;
+	border-radius: 5px;
+	background-color: #bbb;
+}
+ul#cv-section-links li a{
+	font-weight: lighter;
+	color: #aaa;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 80px;
+	letter-spacing: 2px;
+	padding: 0px 10px;
+	transition: color 0.3s;
+}
+ul#cv-section-links li a:hover{
+	color: #fff;
+}
+
+/*Styling the content section parts*/
+div.section-wrapper{
+	width: 100%;
+	padding-top: 20px;
+}
+div.section-inner-wrapper{
+	width: 920px;
+	padding: 10px 20px;
+	margin:auto;
+	background-color: #fff;
+	border-radius: 0px 0px 2px 2px;
+	border-top: 0px solid #1aa4fc;
+}
+h1.section-header{
+	color: #ccc;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 40px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+/*Basic info styling*/
+/* style 1 
+div#profile-pic{
+	float: left;
+	height: 320px;
+	width: 240px;
+	border: 1px dashed #eee;
+	margin-right: 20px;
+
+}
+div#profile-pic:after{
+	position: relative;
+	top: 10px;
+	display: block;
+	content: " ";
+	height: 300px;
+	width: 220px;
+	margin: auto;
+	background: url('../images/alex.jpg') no-repeat;
+	background-size: 120%;
+}
+*/
+
+/*profile style 2 */
+div#profile-pic{
+	float: left;
+	display: inline-block;
+	height: 240px;
+	width: 230px;
+	margin-right: 20px;
+
+}
+div#profile-pic:after{
+	position: relative;
+	top: 0px;
+	display: block;
+	content: " ";
+	height: 220px;
+	width: 220px;
+	background: url('../images/alex.jpg') no-repeat;
+	background-size: 120%;
 	background-position: -10px -20px;
+	box-shadow: 5px 5px 0px #999;
+}
+
+/*Styling the basic information items*/
+div#info-content-wrapper{
+	float: left;
+	display: inline-block;
+	width: 670px;
+}
+div#left-info-col{
+	float: left;
+}
+div#right-info-col{
+	float:right;
+}
+div.info-col ul{
+	width: 325px;
+}
+div#my-name-wrapper{
+	margin-bottom: 10px;
+}
+h2#my-name{
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h3#main-job-title{
+	color: #ccc;
+	font-weight: lighter;
+	font-size: 16px;
+	font-style: italic;
+	letter-spacing: 3px;
+	margin-top: -5px
+}
+ul.basic-info-col{
+	display: inline-block;
+}
+ul.basic-info-col > li{
+	display: block;
+	font-weight: bold;
+	padding: 8px 0px;
+	border-bottom: 1px solid #ccc;
+
+}
+ul.basic-info-col > li:last-child{
+	border: none;
+}
+ul.basic-info-col li span{
+	display: inline-block;
+	color: #888;
+}
+
+ul.social-links a{
+	float: right;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-color: #1aa4fc;
+	border-radius: 30px;
+	margin-left: 10px;
+}
+/*
+	Skills section styling
+*/
+ul#skill-items{
+	width: 100%;
+}
+ul#skill-items > li{
+	height: 100px;	
+}
+ul#skill-items > li > h2.skill-header{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	width: 150px;
+	text-transform: uppercase;
+	color: #555;
+	line-height: 80px;
+}
+ul.skill-levels{
+	display: inline-block;
+	margin-right: 50px;
+	margin-left: 10px;
+}
+ul.skill-levels li{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 15px;
+	background-color: #ccc;
+}
+/*Level 1*/
+ul.level-1 li:first-child{
+	background-color: #1aa4fc;
+}
+/*Level 2*/
+ul.level-2 li:first-child{
+	background-color: #1aa4fc;
+}
+ul.level-2 li:nth-child(2){
+	background-color: #1aa4fc;
+}
+/*Level 3*/
+ul.level-3 li:first-child{
+	background-color: #1aa4fc;
+}
+ul.level-3 li:nth-child(2){
+	background-color: #1aa4fc;
+}
+ul.level-3 li:nth-child(3){
+	background-color: #1aa4fc;
+}
+/*Level 4*/
+ul.level-4 li{
+	background-color: #1aa4fc;
+}
+ul.level-4 li:last-child{
+	background-color: #ccc;
+}
+/*level-5*/
+ul.level-5 li{
+	background-color: #1aa4fc;
+}
+
+ul#skill-items > li > p {
+	display: inline-block;
+	width: 500px;	
+}
+
+/*FOOTER STYLING*/
+footer{
+	height: 50px;
+	width: 920px;
+	padding: 0px 20px;
+	margin: auto;
 }

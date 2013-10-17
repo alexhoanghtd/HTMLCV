@@ -31,10 +31,13 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	color: #333;
+	font-size: 12px;
 	min-width: 600px;
 	font-family: helvetica, sans-serif;
 	background-repeat: no-repeat;
 	background-position: 50% 0px;
+	background-color: #eee;
 }
 ol, ul {
 	list-style: none;
